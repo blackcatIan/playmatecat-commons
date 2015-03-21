@@ -11,6 +11,9 @@ import java.io.Serializable;
 public class NioTransferAdapter implements Serializable {
 
 	private static final long serialVersionUID = 1L;
+	
+	/**请求的唯一标码**/
+	private String GUID;
 
 	/**请求的服务名**/
 	private String restServiceName;
@@ -20,6 +23,14 @@ public class NioTransferAdapter implements Serializable {
 	
 	/**JSONdata所对应的数据类型**/
 	private Class<? extends Object> clazz;
+	
+	public String getGUID() {
+		return GUID;
+	}
+
+	public void setGUID(String gUID) {
+		GUID = gUID;
+	}
 	
 	public NioTransferAdapter(String JSONdata) {
 		this.JSONdata = JSONdata;
