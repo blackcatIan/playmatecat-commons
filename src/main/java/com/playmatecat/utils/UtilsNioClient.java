@@ -63,7 +63,7 @@ public class UtilsNioClient {
 //		IoSession session = NioTCPClient.getSession();
 //		String GUID = UtilsGUID.getGUID();
 		long end1 = System.currentTimeMillis();
-		System.out.println("write use:" + (end1 -start1) + " ms");
+		//System.out.println("write use:" + (end1 -start1) + " ms");
 		
 		long start = System.currentTimeMillis();
 		//获得返回数据
@@ -72,9 +72,9 @@ public class UtilsNioClient {
 			if(rtnNta != null) {
 				//释放空间
 				resultMap.remove(GUID);
-				//System.out.println("I got " + rtnNta.getJSONdata());
+				System.out.println("I got " + rtnNta.getJSONdata());
 				long end = System.currentTimeMillis();
-				System.out.println("read use:" + (end -start) + " ms");
+				//System.out.println("read use:" + (end -start) + " ms");
 				return;
 			} else {
 				try {
