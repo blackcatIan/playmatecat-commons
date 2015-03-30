@@ -1,4 +1,4 @@
-package com.playmatecat.utils;
+package com.playmatecat.utils.mina;
 
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -7,6 +7,7 @@ import org.apache.mina.core.session.IoSession;
 
 import com.playmatecat.mina.NioTransferAdapter;
 import com.playmatecat.mina.client.NioTCPClient;
+import com.playmatecat.utils.label.UtilsGUID;
 
 /**
  * mina Nio客户端工具类

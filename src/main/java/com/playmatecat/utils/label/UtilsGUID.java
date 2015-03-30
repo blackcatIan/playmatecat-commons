@@ -1,4 +1,4 @@
-package com.playmatecat.utils;
+package com.playmatecat.utils.label;
 
 import java.util.UUID;
 

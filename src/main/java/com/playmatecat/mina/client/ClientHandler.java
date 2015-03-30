@@ -7,7 +7,7 @@ import org.apache.mina.core.service.IoHandlerAdapter;
 import org.apache.mina.core.session.IoSession;
 
 import com.playmatecat.mina.NioTransferAdapter;
-import com.playmatecat.utils.UtilsNioClient;
+import com.playmatecat.utils.mina.UtilsNioClient;
 
 public class ClientHandler extends IoHandlerAdapter {
 	

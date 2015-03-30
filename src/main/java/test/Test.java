@@ -1,7 +1,7 @@
 package test;
 
 import com.playmatecat.mina.NioTransferAdapter;
-import com.playmatecat.utils.UtilsNioClient;
+import com.playmatecat.utils.mina.UtilsNioClient;
 
 public class Test {
 	public static void main(String[] args) throws Exception{
