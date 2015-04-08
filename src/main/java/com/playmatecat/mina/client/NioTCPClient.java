@@ -105,7 +105,7 @@ public class NioTCPClient {
 	 */
 	public void destory() {
 		connector.removeListener(nioClientSessionListener);
-		 //等待所有的请求处理完毕
+		//等待所有的请求处理完毕
 	    session.getCloseFuture().awaitUninterruptibly();
 	    //断开连接
 	    connector.dispose();
